@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar Producto</title>
+    <link rel="stylesheet"href="../static/css/Estilos.css">
+    <script src="{{url_for('static',filename='js/validacion.js')}}"></script>
+</head>
+<body>
+    <header>
+        <h1>Gestionar Producto</h1>
+        <br /><br />
+
+
+    </header>
+    <main>
+        <form form name="formular" method="post" class="main" action="" >
+            <select name="Nombre" id ="Nombre" onchange="validarProducto()">
+                <label>Seleccione un producto:</label>
+
+                <option value="Seleccione">Seleccione un producto </option>
+                <option value="Capuccino">Capuccino</option>
+                <option value="Latte">Latte</option>
+                <option value="Chocolate">Chocolate</option>
+                <option value="Malteada">Malteada</option>
+                <option value="Mocaccino">Mocaccino</option>
+                <option value="Granizado">Granizado</option>
+            </select>
+            <label for="buscar">     Buscar: </label>
+            <input type="buscar" id="buscar" name="buscar">
+            <!--<br /><br />-->
+            <div id="contenedor">
+
+            </div>
+
+
+
+            <br /><br />
+            <br /><br />
+            <br /><br />
+            <button type="submit">Agregar producto</button>
+            <button type="submit">Editar producto</button>
+            <button type="submit">Eliminar producto</button>
+            
+        </form>
+    </main>
+</body>
+</html>

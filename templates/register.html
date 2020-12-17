@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo</title>
+    <link rel="stylesheet"href="../static/css/Estilos.css">
+    <script src = "validacion.js"></script>
+</head>
+
+    <header>
+
+        <h1>Nuevo Usuario</h1>
+        <div>
+            <img src="../static/images/cuenta.png">
+        </div>
+
+    </header>
+    <main>
+        <article>
+            <section>
+                <form name="formulario" method="post" class="main" action="{{ url_for('register') }}" onsubmit=" return validarFormulario();">
+
+                        <br /><br />
+                        <label for="email">Correo electrónico: </label>
+                        <input type="email" id="email" name="email" placeholder="Correo de nuevo usuario">
+                        <br /><br />
+
+                        <label for="username">Usuario:</label><!--Atributo for relaciona el label con el id del input-->
+                        <input type="text" id="username" name="username"placeholder="Nuevo usuario">
+
+
+                        <br /><br />
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password" name="password" placeholder="Clave de usuario">
+
+               <!-- <img src="../static/images/show_pwd.png" onmouseover="showPassword();" onmouseout="hidePassword();"> -->
+
+                   
+                    <br /><br />
+                    <input type="submit" value="Crear Usuario">
+
+                </form>
+
+            </section>
+
+        </article>
+    </main>
+    <footer>
+    </footer>
+
+</body>
+</html>

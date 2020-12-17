@@ -1,0 +1,33 @@
+
+body{
+    background-color:#2a93e9;
+    font-family: 'Courier New', Courier, monospace;
+
+    /font-style: italic;/
+}
+
+h1{
+    font-style: normal;
+    text-align: center;
+}
+
+img{
+    position: absolute;
+    top: 50px; /* ajustar los valores para mover la imagen */
+    left: 10px;
+    height:2cm;
+    width:2cm;
+}
+
+button{
+        text-align: center;
+        min-width: 40px;
+        align-items: center;
+    }
+.nav{
+    width:500px;
+    margin:0;
+    align-items: left;
+
+}
+
